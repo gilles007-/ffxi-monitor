@@ -47,6 +47,8 @@
             this.tabChatPageAll = new System.Windows.Forms.TabPage();
             this.rtbAll = new System.Windows.Forms.RichTextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.tabChatPageYell = new System.Windows.Forms.TabPage();
+            this.rtbYell = new System.Windows.Forms.RichTextBox();
             this.tabChat.SuspendLayout();
             this.tabChatPageSay.SuspendLayout();
             this.tabChatPageTell.SuspendLayout();
@@ -55,6 +57,7 @@
             this.tabChatPageShout.SuspendLayout();
             this.tabChatPageOther.SuspendLayout();
             this.tabChatPageAll.SuspendLayout();
+            this.tabChatPageYell.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabChat
@@ -67,6 +70,7 @@
             this.tabChat.Controls.Add(this.tabChatPageParty);
             this.tabChat.Controls.Add(this.tabChatPageLinkshell);
             this.tabChat.Controls.Add(this.tabChatPageShout);
+            this.tabChat.Controls.Add(this.tabChatPageYell);
             this.tabChat.Controls.Add(this.tabChatPageOther);
             this.tabChat.Controls.Add(this.tabChatPageAll);
             this.tabChat.Location = new System.Drawing.Point(-1, 0);
@@ -74,7 +78,7 @@
             this.tabChat.Name = "tabChat";
             this.tabChat.Padding = new System.Drawing.Point(0, 0);
             this.tabChat.SelectedIndex = 0;
-            this.tabChat.Size = new System.Drawing.Size(308, 171);
+            this.tabChat.Size = new System.Drawing.Size(350, 173);
             this.tabChat.TabIndex = 34;
             this.tabChat.TabStop = false;
             this.tabChat.DoubleClick += new System.EventHandler(this.tabChat_DoubleClick);
@@ -86,7 +90,7 @@
             this.tabChatPageSay.Controls.Add(this.rtbSay);
             this.tabChatPageSay.Location = new System.Drawing.Point(4, 22);
             this.tabChatPageSay.Name = "tabChatPageSay";
-            this.tabChatPageSay.Size = new System.Drawing.Size(300, 145);
+            this.tabChatPageSay.Size = new System.Drawing.Size(342, 147);
             this.tabChatPageSay.TabIndex = 8;
             this.tabChatPageSay.Text = "Say";
             this.tabChatPageSay.UseVisualStyleBackColor = true;
@@ -121,7 +125,7 @@
             this.rtbSay.Margin = new System.Windows.Forms.Padding(0);
             this.rtbSay.Name = "rtbSay";
             this.rtbSay.ReadOnly = true;
-            this.rtbSay.Size = new System.Drawing.Size(300, 145);
+            this.rtbSay.Size = new System.Drawing.Size(342, 147);
             this.rtbSay.TabIndex = 2;
             this.rtbSay.Text = "";
             this.rtbSay.WordWrap = false;
@@ -132,7 +136,7 @@
             this.tabChatPageTell.Controls.Add(this.rtbTell);
             this.tabChatPageTell.Location = new System.Drawing.Point(4, 22);
             this.tabChatPageTell.Name = "tabChatPageTell";
-            this.tabChatPageTell.Size = new System.Drawing.Size(300, 145);
+            this.tabChatPageTell.Size = new System.Drawing.Size(380, 146);
             this.tabChatPageTell.TabIndex = 2;
             this.tabChatPageTell.Text = "Tell";
             this.tabChatPageTell.UseVisualStyleBackColor = true;
@@ -148,7 +152,7 @@
             this.rtbTell.Margin = new System.Windows.Forms.Padding(0);
             this.rtbTell.Name = "rtbTell";
             this.rtbTell.ReadOnly = true;
-            this.rtbTell.Size = new System.Drawing.Size(300, 145);
+            this.rtbTell.Size = new System.Drawing.Size(380, 146);
             this.rtbTell.TabIndex = 3;
             this.rtbTell.Text = "";
             this.rtbTell.WordWrap = false;
@@ -159,7 +163,7 @@
             this.tabChatPageParty.Controls.Add(this.rtbParty);
             this.tabChatPageParty.Location = new System.Drawing.Point(4, 22);
             this.tabChatPageParty.Name = "tabChatPageParty";
-            this.tabChatPageParty.Size = new System.Drawing.Size(300, 145);
+            this.tabChatPageParty.Size = new System.Drawing.Size(380, 146);
             this.tabChatPageParty.TabIndex = 3;
             this.tabChatPageParty.Text = "Party";
             this.tabChatPageParty.UseVisualStyleBackColor = true;
@@ -175,7 +179,7 @@
             this.rtbParty.Margin = new System.Windows.Forms.Padding(0);
             this.rtbParty.Name = "rtbParty";
             this.rtbParty.ReadOnly = true;
-            this.rtbParty.Size = new System.Drawing.Size(300, 145);
+            this.rtbParty.Size = new System.Drawing.Size(380, 146);
             this.rtbParty.TabIndex = 1;
             this.rtbParty.Text = "";
             this.rtbParty.WordWrap = false;
@@ -186,7 +190,7 @@
             this.tabChatPageLinkshell.Controls.Add(this.rtbLinkshell);
             this.tabChatPageLinkshell.Location = new System.Drawing.Point(4, 22);
             this.tabChatPageLinkshell.Name = "tabChatPageLinkshell";
-            this.tabChatPageLinkshell.Size = new System.Drawing.Size(300, 145);
+            this.tabChatPageLinkshell.Size = new System.Drawing.Size(380, 146);
             this.tabChatPageLinkshell.TabIndex = 4;
             this.tabChatPageLinkshell.Text = "Linkshell";
             this.tabChatPageLinkshell.UseVisualStyleBackColor = true;
@@ -202,7 +206,7 @@
             this.rtbLinkshell.Margin = new System.Windows.Forms.Padding(0);
             this.rtbLinkshell.Name = "rtbLinkshell";
             this.rtbLinkshell.ReadOnly = true;
-            this.rtbLinkshell.Size = new System.Drawing.Size(300, 145);
+            this.rtbLinkshell.Size = new System.Drawing.Size(380, 146);
             this.rtbLinkshell.TabIndex = 1;
             this.rtbLinkshell.TabStop = false;
             this.rtbLinkshell.Text = "";
@@ -214,7 +218,7 @@
             this.tabChatPageShout.Controls.Add(this.rtbShout);
             this.tabChatPageShout.Location = new System.Drawing.Point(4, 22);
             this.tabChatPageShout.Name = "tabChatPageShout";
-            this.tabChatPageShout.Size = new System.Drawing.Size(300, 145);
+            this.tabChatPageShout.Size = new System.Drawing.Size(342, 147);
             this.tabChatPageShout.TabIndex = 5;
             this.tabChatPageShout.Text = "Shout";
             this.tabChatPageShout.UseVisualStyleBackColor = true;
@@ -230,7 +234,7 @@
             this.rtbShout.Margin = new System.Windows.Forms.Padding(0);
             this.rtbShout.Name = "rtbShout";
             this.rtbShout.ReadOnly = true;
-            this.rtbShout.Size = new System.Drawing.Size(300, 145);
+            this.rtbShout.Size = new System.Drawing.Size(342, 147);
             this.rtbShout.TabIndex = 2;
             this.rtbShout.Text = "";
             this.rtbShout.WordWrap = false;
@@ -241,7 +245,7 @@
             this.tabChatPageOther.Controls.Add(this.rtbOther);
             this.tabChatPageOther.Location = new System.Drawing.Point(4, 22);
             this.tabChatPageOther.Name = "tabChatPageOther";
-            this.tabChatPageOther.Size = new System.Drawing.Size(300, 145);
+            this.tabChatPageOther.Size = new System.Drawing.Size(380, 146);
             this.tabChatPageOther.TabIndex = 9;
             this.tabChatPageOther.Text = "Other";
             this.tabChatPageOther.UseVisualStyleBackColor = true;
@@ -257,7 +261,7 @@
             this.rtbOther.Margin = new System.Windows.Forms.Padding(0);
             this.rtbOther.Name = "rtbOther";
             this.rtbOther.ReadOnly = true;
-            this.rtbOther.Size = new System.Drawing.Size(300, 145);
+            this.rtbOther.Size = new System.Drawing.Size(380, 146);
             this.rtbOther.TabIndex = 2;
             this.rtbOther.Text = "";
             this.rtbOther.WordWrap = false;
@@ -268,7 +272,7 @@
             this.tabChatPageAll.Controls.Add(this.rtbAll);
             this.tabChatPageAll.Location = new System.Drawing.Point(4, 22);
             this.tabChatPageAll.Name = "tabChatPageAll";
-            this.tabChatPageAll.Size = new System.Drawing.Size(300, 145);
+            this.tabChatPageAll.Size = new System.Drawing.Size(342, 147);
             this.tabChatPageAll.TabIndex = 7;
             this.tabChatPageAll.Text = "All";
             this.tabChatPageAll.UseVisualStyleBackColor = true;
@@ -283,19 +287,46 @@
             this.rtbAll.Location = new System.Drawing.Point(0, 0);
             this.rtbAll.Name = "rtbAll";
             this.rtbAll.ReadOnly = true;
-            this.rtbAll.Size = new System.Drawing.Size(300, 145);
+            this.rtbAll.Size = new System.Drawing.Size(342, 147);
             this.rtbAll.TabIndex = 0;
             this.rtbAll.Text = "";
             this.rtbAll.VScroll += new System.EventHandler(this.rtbAll_VScroll);
             // 
-            // Form2
+            // tabChatPageYell
+            // 
+            this.tabChatPageYell.Controls.Add(this.rtbYell);
+            this.tabChatPageYell.Location = new System.Drawing.Point(4, 22);
+            this.tabChatPageYell.Name = "tabChatPageYell";
+            this.tabChatPageYell.Size = new System.Drawing.Size(342, 147);
+            this.tabChatPageYell.TabIndex = 10;
+            this.tabChatPageYell.Text = "Yell";
+            this.tabChatPageYell.UseVisualStyleBackColor = true;
+            // 
+            // rtbYell
+            // 
+            this.rtbYell.BackColor = System.Drawing.Color.White;
+            this.rtbYell.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbYell.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbYell.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbYell.ForeColor = System.Drawing.Color.Black;
+            this.rtbYell.Location = new System.Drawing.Point(0, 0);
+            this.rtbYell.Margin = new System.Windows.Forms.Padding(0);
+            this.rtbYell.Name = "rtbYell";
+            this.rtbYell.ReadOnly = true;
+            this.rtbYell.Size = new System.Drawing.Size(342, 147);
+            this.rtbYell.TabIndex = 3;
+            this.rtbYell.Text = "";
+            this.rtbYell.WordWrap = false;
+            this.rtbYell.VScroll += new System.EventHandler(this.rtbYell_VScroll);
+            // 
+            // Form_Logs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(306, 170);
+            this.ClientSize = new System.Drawing.Size(348, 172);
             this.Controls.Add(this.tabChat);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
+            this.Name = "Form_Logs";
             this.Text = "FFXI Monitor Log";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.tabChat.ResumeLayout(false);
@@ -307,6 +338,7 @@
             this.tabChatPageShout.ResumeLayout(false);
             this.tabChatPageOther.ResumeLayout(false);
             this.tabChatPageAll.ResumeLayout(false);
+            this.tabChatPageYell.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -331,5 +363,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox rtbAll;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.TabPage tabChatPageYell;
+        private System.Windows.Forms.RichTextBox rtbYell;
     }
 }

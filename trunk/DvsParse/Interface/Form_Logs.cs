@@ -67,6 +67,11 @@ namespace FFXIMonitor.Interface
             get { return rtbShout; }
         }
 
+        public RichTextBox Yell
+        {
+            get { return rtbYell; }
+        }
+
         public RichTextBox Other
         {
             get { return rtbOther; }
@@ -136,6 +141,12 @@ namespace FFXIMonitor.Interface
             get { return vShout_max; }
         }
 
+        bool vYell_max = false;
+        public bool VYellmax
+        {
+            get { return vYell_max; }
+        }
+        
         bool vOther_max = false;
         public bool VOthermax
         {
@@ -185,6 +196,12 @@ namespace FFXIMonitor.Interface
             get { return wShoutParam; }
         }
 
+        uint wYellParam;
+        public uint wYell
+        {
+            get { return wYellParam; }
+        }
+
         uint wOtherParam;
         public uint wOther
         {
@@ -209,6 +226,11 @@ namespace FFXIMonitor.Interface
         private void rtbShout_VScroll(object sender, EventArgs e)
         {
             intercept(rtbShout, out wShoutParam, out vShout_max);
+        }
+
+        private void rtbYell_VScroll(object sender, EventArgs e)
+        {
+            intercept(rtbYell, out wYellParam, out vYell_max);
         }
 
         private void rtbLinkshell_VScroll(object sender, EventArgs e)
@@ -293,6 +315,10 @@ namespace FFXIMonitor.Interface
 
                 tw = new StreamWriter(folderBrowserDialog1.SelectedPath + "/" + DateTime.Now.Hour.ToString() + "-" + DateTime.Now.Minute.ToString() + "-shout.txt");
                 tw.Write(rtbShout.Text);
+                tw.Close();
+
+                tw = new StreamWriter(folderBrowserDialog1.SelectedPath + "/" + DateTime.Now.Hour.ToString() + "-" + DateTime.Now.Minute.ToString() + "-yell.txt");
+                tw.Write(rtbYell.Text);
                 tw.Close();
 
                 tw = new StreamWriter(folderBrowserDialog1.SelectedPath + "/" + DateTime.Now.Hour.ToString() + "-" + DateTime.Now.Minute.ToString() + "-other.txt");
