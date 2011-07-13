@@ -99,6 +99,7 @@ namespace FFXIMonitor.Interface
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkBoxYell = new System.Windows.Forms.CheckBox();
             this.statusStrip1.SuspendLayout();
             this.x1.SuspendLayout();
             this.tabPageA1.SuspendLayout();
@@ -129,7 +130,7 @@ namespace FFXIMonitor.Interface
             // checkBoxShout
             // 
             this.checkBoxShout.AutoSize = true;
-            this.checkBoxShout.Location = new System.Drawing.Point(240, 32);
+            this.checkBoxShout.Location = new System.Drawing.Point(231, 32);
             this.checkBoxShout.Name = "checkBoxShout";
             this.checkBoxShout.Size = new System.Drawing.Size(54, 17);
             this.checkBoxShout.TabIndex = 63;
@@ -139,7 +140,7 @@ namespace FFXIMonitor.Interface
             // checkBoxLS
             // 
             this.checkBoxLS.AutoSize = true;
-            this.checkBoxLS.Location = new System.Drawing.Point(167, 32);
+            this.checkBoxLS.Location = new System.Drawing.Point(158, 32);
             this.checkBoxLS.Name = "checkBoxLS";
             this.checkBoxLS.Size = new System.Drawing.Size(67, 17);
             this.checkBoxLS.TabIndex = 62;
@@ -159,7 +160,7 @@ namespace FFXIMonitor.Interface
             // checkBoxParty
             // 
             this.checkBoxParty.AutoSize = true;
-            this.checkBoxParty.Location = new System.Drawing.Point(111, 32);
+            this.checkBoxParty.Location = new System.Drawing.Point(102, 32);
             this.checkBoxParty.Name = "checkBoxParty";
             this.checkBoxParty.Size = new System.Drawing.Size(50, 17);
             this.checkBoxParty.TabIndex = 61;
@@ -171,7 +172,7 @@ namespace FFXIMonitor.Interface
             this.checkBoxTell.AutoSize = true;
             this.checkBoxTell.Checked = true;
             this.checkBoxTell.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxTell.Location = new System.Drawing.Point(62, 32);
+            this.checkBoxTell.Location = new System.Drawing.Point(53, 32);
             this.checkBoxTell.Name = "checkBoxTell";
             this.checkBoxTell.Size = new System.Drawing.Size(43, 17);
             this.checkBoxTell.TabIndex = 60;
@@ -181,7 +182,7 @@ namespace FFXIMonitor.Interface
             // checkBoxSay
             // 
             this.checkBoxSay.AutoSize = true;
-            this.checkBoxSay.Location = new System.Drawing.Point(12, 32);
+            this.checkBoxSay.Location = new System.Drawing.Point(3, 32);
             this.checkBoxSay.Name = "checkBoxSay";
             this.checkBoxSay.Size = new System.Drawing.Size(44, 17);
             this.checkBoxSay.TabIndex = 59;
@@ -191,7 +192,7 @@ namespace FFXIMonitor.Interface
             // checkBoxLoop
             // 
             this.checkBoxLoop.AutoSize = true;
-            this.checkBoxLoop.Location = new System.Drawing.Point(300, 32);
+            this.checkBoxLoop.Location = new System.Drawing.Point(145, 7);
             this.checkBoxLoop.Name = "checkBoxLoop";
             this.checkBoxLoop.Size = new System.Drawing.Size(50, 17);
             this.checkBoxLoop.TabIndex = 58;
@@ -488,9 +489,9 @@ namespace FFXIMonitor.Interface
             "",
             "Babelfish",
             "Google"});
-            this.comboBoxTranslate.Location = new System.Drawing.Point(167, 5);
+            this.comboBoxTranslate.Location = new System.Drawing.Point(201, 5);
             this.comboBoxTranslate.Name = "comboBoxTranslate";
-            this.comboBoxTranslate.Size = new System.Drawing.Size(97, 21);
+            this.comboBoxTranslate.Size = new System.Drawing.Size(75, 21);
             this.comboBoxTranslate.TabIndex = 67;
             this.comboBoxTranslate.TextChanged += new System.EventHandler(this.comboBoxTranslate_TextChanged);
             // 
@@ -499,7 +500,7 @@ namespace FFXIMonitor.Interface
             this.checkBox3.AutoSize = true;
             this.checkBox3.Checked = true;
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox3.Location = new System.Drawing.Point(62, 7);
+            this.checkBox3.Location = new System.Drawing.Point(53, 7);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(91, 17);
             this.checkBox3.TabIndex = 64;
@@ -531,9 +532,9 @@ namespace FFXIMonitor.Interface
             this.comboBoxL.Items.AddRange(new object[] {
             "en",
             "fr"});
-            this.comboBoxL.Location = new System.Drawing.Point(277, 5);
+            this.comboBoxL.Location = new System.Drawing.Point(282, 5);
             this.comboBoxL.Name = "comboBoxL";
-            this.comboBoxL.Size = new System.Drawing.Size(64, 21);
+            this.comboBoxL.Size = new System.Drawing.Size(58, 21);
             this.comboBoxL.TabIndex = 68;
             // 
             // groupBox1
@@ -583,7 +584,7 @@ namespace FFXIMonitor.Interface
             // 
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 23);
+            this.button1.Size = new System.Drawing.Size(44, 23);
             this.button1.TabIndex = 75;
             this.button1.Text = "Logs";
             this.button1.UseVisualStyleBackColor = true;
@@ -619,11 +620,22 @@ namespace FFXIMonitor.Interface
             this.toolStripMenuItem2.Text = "Exit";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
+            // checkBoxYell
+            // 
+            this.checkBoxYell.AutoSize = true;
+            this.checkBoxYell.Location = new System.Drawing.Point(291, 32);
+            this.checkBoxYell.Name = "checkBoxYell";
+            this.checkBoxYell.Size = new System.Drawing.Size(43, 17);
+            this.checkBoxYell.TabIndex = 76;
+            this.checkBoxYell.Text = "Yell";
+            this.checkBoxYell.UseVisualStyleBackColor = true;
+            // 
             // Form_FFXI_Monitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 159);
+            this.Controls.Add(this.checkBoxYell);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonStop);
@@ -631,13 +643,13 @@ namespace FFXIMonitor.Interface
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.debug);
             this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.comboBoxTranslate);
             this.Controls.Add(this.checkBoxShout);
             this.Controls.Add(this.checkBoxLS);
             this.Controls.Add(this.checkBoxParty);
             this.Controls.Add(this.checkBoxTell);
             this.Controls.Add(this.checkBoxSay);
             this.Controls.Add(this.checkBoxLoop);
-            this.Controls.Add(this.comboBoxTranslate);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.comboBoxL);
             this.Controls.Add(this.groupBox1);
@@ -727,5 +739,6 @@ namespace FFXIMonitor.Interface
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.CheckBox checkBoxYell;
 	}
 }
