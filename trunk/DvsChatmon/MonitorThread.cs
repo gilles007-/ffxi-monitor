@@ -84,6 +84,7 @@ namespace DvsChatmon
         //private static readonly int FFXiMainStaticOffset = 0x557A90;
         //private static readonly int FFXiMainStaticOffset = 0x55AEC8;
         //private static readonly int FFXiMainStaticOffset = 0x563098;
+        //private static readonly int FFXiMainStaticOffset = 0x5856D8;
 
 
 
