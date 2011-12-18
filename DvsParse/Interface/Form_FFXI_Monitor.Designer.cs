@@ -98,8 +98,10 @@ namespace FFXIMonitor.Interface
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadArFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.checkBoxYell = new System.Windows.Forms.CheckBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.statusStrip1.SuspendLayout();
             this.x1.SuspendLayout();
             this.tabPageA1.SuspendLayout();
@@ -192,7 +194,7 @@ namespace FFXIMonitor.Interface
             // checkBoxLoop
             // 
             this.checkBoxLoop.AutoSize = true;
-            this.checkBoxLoop.Location = new System.Drawing.Point(145, 7);
+            this.checkBoxLoop.Location = new System.Drawing.Point(158, 7);
             this.checkBoxLoop.Name = "checkBoxLoop";
             this.checkBoxLoop.Size = new System.Drawing.Size(50, 17);
             this.checkBoxLoop.TabIndex = 58;
@@ -464,12 +466,6 @@ namespace FFXIMonitor.Interface
             this.checkBoxA7.Text = "enable";
             this.checkBoxA7.UseVisualStyleBackColor = true;
             // 
-            // timer2
-            // 
-            this.timer2.Enabled = true;
-            this.timer2.Interval = 2000;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
             // debug
             // 
             this.debug.AutoSize = true;
@@ -489,7 +485,7 @@ namespace FFXIMonitor.Interface
             "",
             "Babelfish",
             "Google"});
-            this.comboBoxTranslate.Location = new System.Drawing.Point(201, 5);
+            this.comboBoxTranslate.Location = new System.Drawing.Point(214, 5);
             this.comboBoxTranslate.Name = "comboBoxTranslate";
             this.comboBoxTranslate.Size = new System.Drawing.Size(75, 21);
             this.comboBoxTranslate.TabIndex = 67;
@@ -532,9 +528,9 @@ namespace FFXIMonitor.Interface
             this.comboBoxL.Items.AddRange(new object[] {
             "en",
             "fr"});
-            this.comboBoxL.Location = new System.Drawing.Point(282, 5);
+            this.comboBoxL.Location = new System.Drawing.Point(298, 5);
             this.comboBoxL.Name = "comboBoxL";
-            this.comboBoxL.Size = new System.Drawing.Size(58, 21);
+            this.comboBoxL.Size = new System.Drawing.Size(43, 21);
             this.comboBoxL.TabIndex = 68;
             // 
             // groupBox1
@@ -594,7 +590,7 @@ namespace FFXIMonitor.Interface
             // 
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "FFXI Monitor";
+            this.notifyIcon1.Text = "FFXI Monitor0000";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
@@ -602,21 +598,29 @@ namespace FFXIMonitor.Interface
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
+            this.loadArFileToolStripMenuItem,
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(117, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(138, 70);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.toolStripMenuItem1.Text = "Settings";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // loadArFileToolStripMenuItem
+            // 
+            this.loadArFileToolStripMenuItem.Name = "loadArFileToolStripMenuItem";
+            this.loadArFileToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.loadArFileToolStripMenuItem.Text = "Load a-r file";
+            this.loadArFileToolStripMenuItem.Click += new System.EventHandler(this.loadArFileToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(137, 22);
             this.toolStripMenuItem2.Text = "Exit";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -629,6 +633,10 @@ namespace FFXIMonitor.Interface
             this.checkBoxYell.TabIndex = 76;
             this.checkBoxYell.Text = "Yell";
             this.checkBoxYell.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form_FFXI_Monitor
             // 
@@ -660,6 +668,7 @@ namespace FFXIMonitor.Interface
             this.MinimumSize = new System.Drawing.Size(300, 180);
             this.Name = "Form_FFXI_Monitor";
             this.Text = "FFXI Monitor";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.ParseDisplayForm_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ParseDisplayForm_FormClosing);
             this.Resize += new System.EventHandler(this.Form_FFXI_Monitor_Resize);
@@ -740,5 +749,7 @@ namespace FFXIMonitor.Interface
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.CheckBox checkBoxYell;
+        private System.Windows.Forms.ToolStripMenuItem loadArFileToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
 	}
 }
