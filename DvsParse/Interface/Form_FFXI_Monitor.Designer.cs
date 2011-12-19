@@ -60,6 +60,7 @@ namespace FFXIMonitor.Interface
             this.checkBoxLoop = new System.Windows.Forms.CheckBox();
             this.x1 = new System.Windows.Forms.TabControl();
             this.tabPageA1 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.checkBoxA1 = new System.Windows.Forms.CheckBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -218,6 +219,7 @@ namespace FFXIMonitor.Interface
             // 
             // tabPageA1
             // 
+            this.tabPageA1.Controls.Add(this.button2);
             this.tabPageA1.Controls.Add(this.button4);
             this.tabPageA1.Controls.Add(this.checkBoxA1);
             this.tabPageA1.Controls.Add(this.button5);
@@ -231,6 +233,17 @@ namespace FFXIMonitor.Interface
             this.tabPageA1.TabIndex = 0;
             this.tabPageA1.Text = "Alarm 1";
             this.tabPageA1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(166, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(20, 23);
+            this.button2.TabIndex = 57;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button4
             // 
@@ -751,5 +764,6 @@ namespace FFXIMonitor.Interface
         private System.Windows.Forms.CheckBox checkBoxYell;
         private System.Windows.Forms.ToolStripMenuItem loadArFileToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button2;
 	}
 }
